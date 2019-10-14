@@ -4,16 +4,13 @@ using namespace std;
 
 int main()
 {
-    int trim;
-    int pret = 7000;
-    cout << "Introduceti trimestrul dorit!"<< endl;
-    cin >>trim;
-    if ((trim<1)|| (trim>4))
+   int trim;
+   cout << "Introduceti trimestrul dorit!"<< endl;
+   cin >> trim;
+   while(trim < 1 || trim> 4)
     {
-      cout << "Introduceti o valoare valida petru trimestru!"<<endl;
-      cin >>trim;
-      if ((trim<1)|| (trim>4))
-      cout << "Valoare introdusa nu este valida!";
+        cout << "Valoarea introdusa nu este valida! Introduceti o valoare valida!"<<endl;
+        cin >> trim;
     }
     switch (trim)
     {case 1 : cout << "Profitul firmei pe trimestrul 1 este in valoare de 3000"<< endl<<"Bilantul pe anul anterior este in valoare de 8375";break;
