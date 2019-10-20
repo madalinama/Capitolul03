@@ -9,7 +9,7 @@ int main()
    cin >> trim;
    while(trim < 1 || trim> 4)
     {
-        cout << "Valoarea introdusa nu este valida! Introduceti o valoare valida!"<<endl;
+        cout << "Valoarea introdusa nu este valida! Introduceti o valoare valida!"<< endl;
         cin >> trim;
     }
     switch (trim)
